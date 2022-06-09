@@ -163,10 +163,10 @@ span.cmd {
 }
 
 .control-box .log .command-entry {
-  padding-left: 15px;
+  padding: 5px 25px;
   color: #FFF;
-  line-height: 14px;
-  background: url(../images/prompt.gif) no-repeat left top black;
+  line-height: 16px;
+  background: url(../images/prompt.gif) no-repeat 5px top;
 }
 
 .control-box input[type="text"] {
@@ -175,7 +175,7 @@ span.cmd {
   padding: 10px 25px;
   color: #FFF;
   line-height: 16px;
-  background: url(../images/prompt.gif) no-repeat left center black;
+  background: url(../images/prompt.gif) no-repeat 10px center black;
 }
 
 .control-box .log .info, .control-box .log .error {
