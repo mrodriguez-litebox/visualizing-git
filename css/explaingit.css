@@ -11,6 +11,7 @@
 
 body, html {
   height: 100%;
+  background-color: #fafafa;
 }
 
 .intro p, .concept-container p {
@@ -47,7 +48,6 @@ a.openswitch.selected {
 }
 
 .playground-container {
-  margin-top: 20px;
   position: relative;
 }
 
@@ -59,10 +59,9 @@ span.cmd {
 }
 
 .svg-container {
-  margin-left: 250px;
+  margin-left: 300px;
   display: block;
   overflow: auto;
-  border: 1px dotted #AAA;
 }
 
 .svg-container.remote-container {
@@ -85,12 +84,11 @@ span.cmd {
 
 #ExplainGitZen-Container .svg-container {
   display: inline-block;
-  border: 1px dotted #AAA;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
-  left: 250px;
+  left: 300px;
   margin-left: 0;
 }
 
@@ -109,9 +107,9 @@ span.cmd {
 #ExplainGitZen-Container .playground-container {
   position: absolute;
   top: 0;
-  bottom: 20px;
-  right: 20px;
-  left: 20px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
 }
 
 .remote-name-display {
@@ -124,9 +122,8 @@ span.cmd {
   position: absolute;
   top: 0px;
   bottom: 0;
-  width: 250px;
+  width: 300px;
   vertical-align: bottom;
-  border: 1px dotted #AAA;
 }
 
 .control-box select {
@@ -145,8 +142,9 @@ span.cmd {
 .control-box .log {
   overflow-y: auto;
   position: absolute;
-  background: #000;
-  top: 30px;
+  padding: 5px;
+  background: #1a1a1a;
+  top: 0px;
   bottom: 20px;
   left: 0;
   right: 0;
@@ -161,7 +159,7 @@ span.cmd {
 
 .control-box .log, .control-box input[type="text"], .control-box .input {
   font-family: Courier New;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .control-box .log .command-entry {
@@ -174,14 +172,14 @@ span.cmd {
 .control-box input[type="text"] {
   position: absolute;
   bottom: 0;
-  padding-left: 15px;
+  padding: 10px 25px;
   color: #FFF;
-  line-height: 14px;
+  line-height: 16px;
   background: url(../images/prompt.gif) no-repeat left center black;
 }
 
 .control-box .log .info, .control-box .log .error {
-  font-size: 12px;
+  font-size: 16px;
   padding: 5px;
 }
 
@@ -194,8 +192,9 @@ span.cmd {
 }
 
 .control-box input[type="text"] {
-  width: 235px;
+  width: 250px;
   border: none;
+  outline: none;
 }
 
 circle.commit {
