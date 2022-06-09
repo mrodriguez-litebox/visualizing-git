@@ -80,5 +80,81 @@ define([], function () {
     ],
   };
 
-  return [free, freeWithRemote, mergefflocal];
+  var merge3w = {
+    title: "Three way merge",
+    key: "merge3w",
+    message: "Three way merge",
+    commitData: [
+      {
+        id: "e137e9b",
+        tags: ["origin/master"],
+        message: "first commit",
+        parent: "initial",
+        cx: 50,
+        cy: 379,
+        branchless: false,
+      },
+      {
+        id: "ed00fa4",
+        tags: [],
+        parent: "e137e9b",
+        cx: 140,
+        cy: 379,
+        branchless: false,
+      },
+      {
+        id: "e30ebf8",
+        tags: [],
+        parent: "ed00fa4",
+        cx: 230,
+        cy: 379,
+        branchless: false,
+      },
+      {
+        id: "69e418c",
+        tags: [],
+        parent: "e30ebf8",
+        cx: 320,
+        cy: 379,
+        branchless: false,
+      },
+      {
+        id: "4190719",
+        tags: [],
+        parent: "ed00fa4",
+        cx: 230,
+        cy: 289,
+        branchless: false,
+      },
+      {
+        id: "26daa61",
+        tags: ["master", "HEAD"],
+        parent: "4190719",
+        cx: 320,
+        cy: 289,
+        branchless: false,
+      },
+      {
+        id: "97eef1e",
+        tags: ["test"],
+        parent: "69e418c",
+        cx: 410,
+        cy: 379,
+        branchless: false,
+      },
+    ],
+    originData: [
+      {
+        id: "e137e9b",
+        tags: ["master", "HEAD"],
+        message: "first commit",
+        parent: "initial",
+        cx: 50,
+        cy: 360,
+        branchless: false,
+      },
+    ],
+  };
+
+  return [free, freeWithRemote, mergefflocal, merge3w];
 });
