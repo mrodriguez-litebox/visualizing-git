@@ -110,7 +110,7 @@ require(['explaingit', 'demos'], function (explainGit, demos) {
 
       var savedState = null
       if (window.localStorage) {
-        savedState = JSON.parse(window.localStorage.getItem('git-viz-snapshot') || 'null')
+        // savedState = JSON.parse(window.localStorage.getItem('git-viz-snapshot') || 'null')
       }
 
       var initial = Object.assign(copyDemo(lastDemo), {

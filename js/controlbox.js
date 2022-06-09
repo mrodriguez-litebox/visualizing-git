@@ -70,7 +70,7 @@ function(_yargs, d3, demos) {
 
     persist: function () {
       if (window.localStorage) {
-        window.localStorage.setItem('git-viz-snapshot', JSON.stringify(this.undoHistory))
+        // window.localStorage.setItem('git-viz-snapshot', JSON.stringify(this.undoHistory))
       }
     },
 
